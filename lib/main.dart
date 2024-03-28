@@ -17,12 +17,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) => MultiProvider(
           providers: [
-            ChangeNotifierProvider(create: (_) => FavoriteProvider()),
-            ChangeNotifierProvider(create: (_) => CartProvider()),
-            ChangeNotifierProvider(create: (_) => SelectedCategory()),
-            ChangeNotifierProvider(create: (_) => ProductsProvider()),
-             ChangeNotifierProvider(create: (_) => BottomNavigationBarProvider()),
-             ChangeNotifierProvider(create: (_) => SizeSelection()),
+            ChangeNotifierProvider(create: (context) => FavoriteProvider()),
+            ChangeNotifierProvider(create: (context) => CartProvider()),
+            ChangeNotifierProvider(create: (context) => SelectedCategory()),
+            ChangeNotifierProvider(create: (context) => ProductsProvider()),
+             ChangeNotifierProvider(create: (context) => BottomNavigationBarProvider()),
+             ChangeNotifierProvider(create: (context) => SizeSelection()),
              
           ],
           child: MaterialApp(

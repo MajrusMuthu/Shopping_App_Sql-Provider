@@ -14,7 +14,7 @@ class _Profile_ScreenState extends State<Profile_Screen> {
   Widget build(BuildContext context) {
     return 
      const Scaffold(
-      body: Center(child: Text("Profile_Screen"),),
+      body: Center(child: Text("Profile_Screen")),
      );
   }
 }
