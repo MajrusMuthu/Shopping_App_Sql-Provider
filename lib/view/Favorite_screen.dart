@@ -3,9 +3,14 @@ import 'package:provider/provider.dart';
 import 'package:sql_provider_/controller/Provider/favorite_provider.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 
-class FavoriteScreen extends StatelessWidget {
+class FavoriteScreen extends StatefulWidget {
   const FavoriteScreen({Key? key}) : super(key: key);
 
+  @override
+  State<FavoriteScreen> createState() => _FavoriteScreenState();
+}
+
+class _FavoriteScreenState extends State<FavoriteScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
